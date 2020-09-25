@@ -1,9 +1,10 @@
 let firstNumberInt;
 let secondNumberInt;
-let myButton = document.getElementById('calculateButton'); 
-let result = document.getElementById('result')
+let calculateButton = document.getElementById('calculateButton'); 
+let resetButton = document.getElementById('resetButton'); 
+let result = document.getElementById('result');
 
-myButton.addEventListener('click', function(event) { 
+calculateButton.addEventListener('click', function(event) { 
     firstNumberInt = parseInt(document.getElementById('firstNumberInt').value)
     secondNumberInt = parseInt(document.getElementById('secondNumberInt').value)
     console.log("operator = " +operator)
@@ -20,3 +21,10 @@ myButton.addEventListener('click', function(event) {
         break;
     }
 });
+
+resetButton.addEventListener("click", function(event) {
+    firstNumberInt = parseInt(document.getElementById('firstNumberInt').value)
+    secondNumberInt = parseInt(document.getElementById('secondNumberInt').value)
+    document.getElementById('firstNumberInt').value = '';
+    document.getElementById('secondNumberInt').value = '';
+})

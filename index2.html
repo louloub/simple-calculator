@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Titre de la page</title>
-  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <h1>My best H1 title !</h1>
@@ -12,13 +12,15 @@
     <input type="int" id="firstNumberInt" name="firstNumberInt"><br><br>
     <label for="secondNumber">Second number:</label>
     <input type="int" id="secondNumberInt" name="secondNumberInt"><br><br>
+    <p>Select your operator :</p>
     <select name="operator" id="operator">
         <option value="+">+</option>
         <option value="-">-</option>
         <option value="*">*</option>
-    </select>
-    <input id="result" type="result" value="">
-    <button id="calculateButton" type="button">Calculate!</button>
+    </select><br><br>
+    <button id="calculateButton" type="button">Calculate!</button><br><br>
+    <input id="result" type="result" value=""><br><br>
+    <button id="resetButton" type="button">Reset</button><br><br>
 </form>
   
 </body>
